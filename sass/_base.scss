@@ -1,0 +1,49 @@
+:root {
+    --color-gray: #777;
+    --color-gray-light: rgb(221, 221, 221);
+    --color-black: #000;
+    --color-gray-dark:#222;
+    --color-white: #fff;
+}
+
+$bg-laragest: 75em; //1200 screen width
+$bg-larage: 68.75em; //1100 screen width
+$bg-medium: 56.25em; //900 screen width
+$bg-small: 41em; //600 screen width
+$bg-exsmall: 31em; //500 screen width
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width : $bg-larage) {
+     
+        font-size: 50%;
+    
+    }
+}
+
+
+body {
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Lato', sans-serif;
+    background-image: linear-gradient( rgb(95, 31, 31), rgb(22, 19, 13));
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-black);
+}

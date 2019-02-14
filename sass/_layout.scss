@@ -1,0 +1,112 @@
+.container {
+   max-width: 120rem;
+   margin: 8rem auto;
+   background-color: var(--color-white);
+   box-shadow: 0 2rem 6rem rgba(rgb(248, 248, 248),  .6);
+   border-radius: 2px;
+
+   @media only screen and (max-width : $bg-laragest) {
+       
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+
+}
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 7rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--color-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    
+}
+
+
+.content {
+    display: flex;
+
+    @media only screen and (max-width : $bg-medium) {
+     
+        flex-direction: column;
+    
+    }
+}
+
+
+.sidebar {
+
+    flex: 0 0 18%;
+    background-color: var(--color-gray-dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.main-content {
+    flex: 1;
+}
+
+
+
+.details {
+    display: flex;
+    padding: 4.5rem;
+    background-color: rgb(53, 43, 43);
+    border-bottom: 1px solid #ece5e5;
+    font-size: 1.4rem;
+
+
+    
+    @media only screen and (max-width : $bg-medium) {
+     
+      padding: 1rem;
+      
+      }
+
+      @media only screen and (max-width : $bg-small) {
+     
+        flex-direction: column;
+    }
+
+}
+
+
+.description {
+    background-color: #fff;
+    box-shadow: 1rem 2rem 4rem rgb(17, 13, 13);
+    flex:  0 0 60%;
+    padding: 3rem;
+    margin-right: 4.5rem;
+
+    
+    @media only screen and (max-width:$bg-medium) {
+     
+      padding: 1.5rem;
+      margin-right: 2.5rem;
+      }
+    
+
+      @media only screen and (max-width : $bg-small) {
+     
+       margin-right: 0;
+       margin-bottom: 4rem;
+    }
+}
+
+
+.user-review {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
